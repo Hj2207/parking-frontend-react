@@ -23,4 +23,6 @@ email: assistant@gmail.com Password: 123456
 Traverse:
 
 Initially there will only be user data in db. Hence login with agent id first to initialize parking zones and parking spaces by one click.
+
+You can check the redux logger in browser console for easy understanding of redux state management
 The project uses Material UI, React for UI and Redux for state management.
