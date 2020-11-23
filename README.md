@@ -1,66 +1,28 @@
-## File Structure
+#parking-management-frontend-react
+Frontend Readme:
 
-Within the download you'll find the following directories and files:
+Pre-requisite:
 
-```
-material-dashboard-react
+The Backend and Database Setup must be completed before running FE. The signin process will not be completed without it(run: node seeder -i).
+Project Guide:
 
-├── LICENSE.md
-├── README.md
-├── jsconfig.json
-├── package.json
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-└── src
-    ├── index.js
-    ├── logo.svg
-    ├── routes.js
-    ├── assets
-    │   ├── css
-    │   │   └── material-dashboard-react.css
-    │   ├
-    │   │  
-    │   │  
-    │   ├── img
-    │   │   └── faces
-    │   └── jss
-    │       ├── material-dashboard-react
-    │       │   ├── components
-    │       │   ├── layouts
-    │       │   └── views
-    │       └── material-dashboard-react.js
-    ├── components
-    │   ├── Card
-    │   │   ├── Card.js
-    │   │   ├── CardAvatar.js
-    │   │   ├── CardBody.js
-    │   │   ├── CardFooter.js
-    │   │   ├── CardHeader.js
-    │   │   └── CardIcon.js
-    │   ├── CustomButtons
-    │   │   └── Button.js
-    │   ├── FixedPlugin
-    │   │   └── FixedPlugin.js
-    │   ├── Grid
-    │   │   ├── GridContainer.js
-    │   │   └── GridItem.js
-    │   ├── Navbars
-    │   │   ├── Navbar.js
-    │   │  
-    │   ├── Sidebar
-    │   │   └── Sidebar.js
-    │   ├── Table
-    │   │   └── Table.js
-    ├── layouts
-    │   ├── Admin.js
-    │   └── RTL.js
-    └── views
-        ├── Dashboard
-        │   └── Dashboard.js
-        ├── TableList
-        │   └── TableList.js
-        └── UserProfile
-            └── UserProfile.js
-```
+Clone the Repository and do npm install.
+
+Run npm start to start the server.
+
+SiginIn creds:
+
+For Booking Counter Agent:
+
+email: agent@gmail.com Password: 123456
+
+For Parking Zone Assistant:
+
+email: assistant@gmail.com Password: 123456
+
+Traverse:
+
+Initially there will only be user data in db. Hence login with agent id first to initialize parking zones and parking spaces by one click.
+
+You can check the redux logger in browser console for easy understanding of redux state management
+The project uses Material UI, React for UI and Redux for state management.
