@@ -8,14 +8,17 @@ import FormDropdown from '../form-dropdown/form-dropdown.component'
 import {emailSignInStartAsync} from '../../redux/user/user.action'
 
 const SignIn =({emailSignInStartAsync})=> {
+    
     const [userCredentials,setCredentials]=useState({email:'',password:'',type:'Booking Counter Agent'})
     const {email,password,type}=userCredentials;
     const userType=['Booking Counter Agent','Parking Zone Assistant']
+
     const handleSubmit = async event => {
             event.preventDefault();
             emailSignInStartAsync(email,password,type);
         }
 
+    // reusable function to handle form data
     const handleChange = event => {
             const { name, value } = event.target;
             setCredentials({ ...userCredentials,[name]: value });

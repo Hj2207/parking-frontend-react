@@ -23,7 +23,6 @@ const useStyles = makeStyles(styles);
 function Dashboard({currentUser,parkingSpaces,parkingZone,setParkingZone,parkingDataFetchStartAsync}) {
   const classes = useStyles();
   useEffect(() => {
-    console.log(parkingZone);
     parkingDataFetchStartAsync(parkingZone)
     }, [parkingZone])
 

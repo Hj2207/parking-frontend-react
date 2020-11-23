@@ -19,8 +19,7 @@ const BookParkingSpace =({parkingZone,parkingSpaces,parkingDataFetchStartAsync})
                                                     })
     const handleSubmit = async event => {
             event.preventDefault();
-            console.log(bookingDetails);
-           await axios.put('http://localhost:5000/api/parking/parkingSpace/book',bookingDetails)
+            await axios.put('http://localhost:5000/api/parking/parkingSpace/book',bookingDetails)
             parkingDataFetchStartAsync(parkingZone)
         }
 

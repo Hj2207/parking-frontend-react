@@ -36,17 +36,17 @@ export default function Initialize() {
   const classes = useStyles();
   const handleAddParkingZoneData= async event=>{
     event.preventDefault();
-    const data=await axios.get('http://localhost:5000/api/parking/initialize/parkingZoneData')
+    await axios.get('http://localhost:5000/api/parking/initialize/parkingZoneData')
     alert('Data initialized A B C as parking zones.')
   }
   const handleAddParkingSpaceData= async event=>{
     event.preventDefault();
-    const data=await axios.get('http://localhost:5000/api/parking/initialize/parkingSpacesData')
+    await axios.get('http://localhost:5000/api/parking/initialize/parkingSpacesData')
     alert('Data initialized: Parking Spaces for every zone .')
   }
   const handleAllocate= async event=>{
     event.preventDefault();
-    const data=await axios.put('http://localhost:5000/api/parking/initialize/deallocate')
+    await axios.put('http://localhost:5000/api/parking/initialize/deallocate')
     alert('Data deallocated.')
   }
   return (

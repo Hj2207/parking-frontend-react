@@ -25,9 +25,7 @@ export const parkingDataFetchStartAsync= (parkingZone)=>{
     return async (dispatch)=>{
         dispatch(parkingDataFetchStart());
         try {
-            console.log('send data',parkingZone);
             const data =  await axios.get(`http://localhost:5000/api/parking/getParkingSpace/${parkingZone}`);
-            console.log(data.data.data[0].parking_space);
             dispatch(parkingDataFetchSuccess(data.data.data[0].parking_space));
         } catch (error) {
             dispatch(parkingDataFetchFail(error))

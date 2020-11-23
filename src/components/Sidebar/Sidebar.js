@@ -24,11 +24,8 @@ const useStyles = makeStyles(styles);
 
  function Sidebar(props) {
   const classes = useStyles();
-  // verifies if routeName is the one active (in browser input)
-  function activeRoute(routeName) {
-    return window.location.href.indexOf(routeName) > -1 ? true : false;
-  }
-  const { color, logo, image, logoText, routes,currentUser,signOutSuccess } = props;
+  
+  const {logo, image, logoText,currentUser,signOutSuccess } = props;
   var links = (
     <List className={classes.list}>
       {currentUser.userType==='Booking Counter Agent'?(<NavLink

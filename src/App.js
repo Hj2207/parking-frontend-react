@@ -5,8 +5,8 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 // core components
 import Admin from "layouts/Admin.js";
-
 import SignIn from './components/sign-in/sign-in.component'
+
 import './App.css'
 import { selectCurrentUser } from './redux/user/user.selectors'
 import "assets/css/material-dashboard-react.css?v=1.9.0";
@@ -39,8 +39,4 @@ const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser
   });
   
-  /* const mapDispatchToProps = dispatch => ({
-    checkUserSession: () => dispatch(checkUserSession())
-  })
-   */
-  export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps)(App);
